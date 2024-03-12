@@ -13,11 +13,16 @@ html,body{
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
-#go-to-home{
+html {
+    height: auto;
+    overflow: auto;
+  }
+
+#go-to-home {
     position: fixed;
     height: 3vw;
     width: 3vw;
-    background-color:  rgba(229, 228, 214, 0.689);
+    background-color:  rgba(244, 243, 233, 0.908);
     border-radius: 50%;
     z-index: 999;
     display: flex;
@@ -27,6 +32,7 @@ html,body{
     right:3vw;
     cursor: pointer;
     scale:0;
+    border: 0;
 }
 #go-to-home img{
     height:2vw;
@@ -144,20 +150,17 @@ html,body{
     width: 100%;
     object-fit: cover;
 }
-@media (min-width:1025px){
+@media (min-width:701px){
     #video-container .vertical-video{
     display: none;
     }
 }
 #video-container #scroll{
-    padding:2.5vw 3vw;
+    padding:2.5vw 3.5vw;
     color: #050505;
-    font-size: 1vw;
     background-color: rgb(252, 252, 252);
     position: absolute;
     z-index: 200;
-    text-transform: uppercase;
-    font-family: futura;
     border-radius: 50%;
     opacity: 0;
     scale:0;
@@ -167,26 +170,32 @@ html,body{
     align-items: center;
     gap:5px;
 }
+#scroll h5{
+    font-family: futura;
+    font-size: 1vw;
+    text-transform: uppercase;
+
+}
 #scroll img{
     height:20px;
     width:20px;
 }
 .category-heading h3{
-    margin-top: 8vw;
     padding:1.5vw;
+    padding-top: 9vw;
     padding-bottom: 5px;
     text-transform: uppercase;
     font-family:  Helvetica;
     letter-spacing: 2px;
 }
-.separator{
+.separator-category{
     margin: 0 1.5vw;
     height:1px;
     background-color: black;
 }
 #page2{
     padding: 0 1.5vw;
-    padding-top: 3vw;
+    padding-top: 1vw;
     width: 100%;
     position: relative;
     display: flex;
@@ -203,7 +212,7 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 10px; 
 }
 #page2 .elem img{
     width: 100%;
@@ -241,7 +250,10 @@ html,body{
     height: 20px;
     width:15px;
 }
-
+#page2 a{
+    text-decoration: none;
+    color:#050505;
+}
 #page2 .elem .shop-category:hover{
     /* height: 200px; */
 }
@@ -299,6 +311,10 @@ html,body{
     flex-wrap: wrap;
     margin-bottom: 3vw;
 }
+#page4 a{
+    text-decoration: none;
+    color:#050505;
+}
 #page4 .product{
     cursor: pointer;
     display: flex;
@@ -309,32 +325,53 @@ html,body{
     text-transform: uppercase;
     font-family: helvetica;
 }
+#page4 .product-card img:hover{
+    transform:scale(1.05);
+    border-radius: 10px;
+}
 #page4 .product-card{
     margin: 1vw 1vw;
     width:45vw;
     height:45vh;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .product h7{
     font-size: .9vw;
     font-family: helvetica;
     margin:1px;
-
 }
  .product-card img{
+    transition: transform 0.5s ease-in-out;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+}
+
+.support-heading h3{
+    font-size: 1vw;
+    padding:1.5vw;
+    padding-top: 0vw;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-family:  Helvetica;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.separator-support{
+    margin: 0 1.5vw;
+    height:1px;
+    background-color: black;
 }
 #page5{
-    /* height: 100vh; */
     text-align: center;
-    
+}
+#page5 .separator{
+    margin-top: 0px;
 }
 #page5 .heading-container{
     margin: 5vw auto;
-    width: 80%;
-    /* background-color: red; */
+    width: 60%;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -343,7 +380,8 @@ html,body{
 #page5 .heading-container h3{
     font-family: futura;
     text-transform: uppercase;
-    font-size: 3vw;
+    font-size: 4.8vw;
+    line-height: 4.5vw;
 }
 #page5 .heading-container .button{
     margin: 2vw;
@@ -366,85 +404,117 @@ html,body{
 }
 #page6{
     padding:1.5vw;
-    padding-bottom: 5vw;
+    padding-bottom: 3vw;
 }
 #page6 .footer1{
-    /* min-height: 40vh; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+#page6 .footer1  h7{
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    color:grey;
+    font-family: helvetica;
+    margin-bottom: 1.1vw;
+}
 #page6 .footer1 .social{
-    width: 20vw;
+    height: 15vw;
+    width:10vw;
     display: flex;
     flex-direction: column;
     text-align: start;
+    line-height: 1.5vw;
 }
-#page6 a{
-    font-family: helvetica;
-    font-size: 1.2vw;
-    text-decoration: none;
-    color: #050505;
+#page6 .footer1 .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#page6 .others{
-    width:20vw;
+.tnc h7{
+    font-size: 0.8vw;
+    margin: 0 1vw;
+}
+#page6 .footer1 .logo img{
+    height: 25vw;
+    width:25vw;
+}
+#page6 .footer1 .others{
+    height: 15vw;
+    width:10vw;
     display: flex;
     flex-direction: column;
     text-align: end;
+    line-height: 1.5vw;
+}
+#page6 a{
+    font-family: helvetica;
+    font-size: 0.9vw;
+    text-decoration: none;
+    color: #050505;
+    letter-spacing: 0px;
 }
 #page6 .footer2{
-    font-family: helvetica;
     font-size: 1.1vw;
     text-align: center;
     margin:auto;
-    margin-top: 5vw;
+    margin-top: 3vw;
     width: 60%;
     height: 10vw;
 }
+.footer2 p{
+    font-family: helvetica;
+    line-height: 1.4vw;
+}
 
-@media (max-width:1024px) {
+@media (max-width:700px) {
     #nav{
         width: 100%;
-        min-height: 20vw;
+        min-height: 10vw;
         position: fixed;
         display: flex;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
         padding-left: 1vw;
+        /* background-color: red; */
     }
     #nav .logo{
+        /* background-color: green; */
+        width:25vw;
+        height:22vw;
+        margin:3vw 2vw;
+        overflow: hidden;
+    }
+    #nav .logo .img2,#nav .logo .img1{
+        /* background-color: green; */
         width:20vw;
         height:20vw;
-        margin:3vw 2vw;
-        /* background-color: green; */
     }
-    #navbar{
-        height: 4vw;
-        min-width:50vw ;
-        padding: 3vw 2vw;
-        /* padding-left: 0; */
-        /* margin-top: 0px; */
+    #nav .logo .img1{
+
+    }
+    #menu-btn{
+        /* height: 12vw;
+        width: 12vw; */
+        background-color: red;
+    }
+    #menu-btn img{
+        height: 12vw;
+        width: 12vw;
+        background-color: green;
+        /* display: none; */
+    }
+    #navbar .icons {
+        background-color: transparent;
+        padding:5px 12px;
+        border-radius: 20px;
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap:4vw;
+        gap:2vw;
     }
     #navbar a{
-        /* background-color: red; */
-        font-size: 0.85vw;
-        text-transform: uppercase;
-        font-family: helvetica;
-        font-weight: 50;
-        scale:0;
+        display: none;
     }
-    #navbar a img{
-        width: 7vw;
-        height: 7vw;
-        scale: 1;
-        /* background-color: green; */
-        /* padding:0; */
-        /* transform: translate(0,-25%); */
-    }
+   
     #page1 h1{
         font-size: 16vw;
         letter-spacing: -0.5vw;  
@@ -520,31 +590,43 @@ html,body{
         font-size: 4vw;
         margin:5vw 0;
         width: 90%;
-        display: block;
+        /* display: block; */
         line-height: 8vw;
+        align-items: center;
     }
     #page3 .sub-heading p{
-        margin-bottom: 4vw;
-        
+        /* margin-bottom: 4vw; */
+    }
+    #page3 .sub-heading .shop-now{
+        /* background-color: red; */
+        font-size: 3vw;
+        width: 25vw;
+        height: 8vw;
+        align-items: center;
+        justify-content: center;
+    }
+    #page3 .sub-heading .shop-now img{
+        /* background-color: green; */
+        width: 2vw;
+        height: 2vw;
     }
     #page4{
-        padding-top: 1vh;
         flex-direction: column;
+        margin-bottom: 3vw;
     }
     #page4 .product{
-        width: 100%;
-        margin-bottom:3vw;
+        margin-bottom:8vw;
     }
     #page4 .product-card{
-        margin: 1vw 1vw;
-        width:95%;
-        height:60vw;
+        margin: 3vw 1vw;
+        width:85vw;
+        height:100vw;
     }
     .product h7{
         font-size: 3.5vw;
-        font-family: helvetica;
-        margin:1px;
-    }  
+    }
+
+    
 }
 
 

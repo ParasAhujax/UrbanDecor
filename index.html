@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./public/letter logo (1).png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <title>Document</title>
+    <title>The Urban Decor</title>
 </head>
 <body>
     <div id="cursor">
 
     </div>
     
-    <div id="go-to-home">
-        <div class="go-to">
-
-            <img src="./public/top.png" alt="">
-        </div>
+    <div id="go-to-h">
+        <!-- <a href="#page3"> -->
+            <div id="go-to-home">
+                <img src="./public/top.png" alt="">
+            </div>
+        <!-- </a> -->
+        
     </div>
     
     <div id="nav">
         <div id="logo" class="logo">
-            <img class="img1"  src="./public/logo-removebg.png" alt="">
-            <img class="img2" src="./public/logo(1).png" alt="logo">
+            <img class="img2" src="./public/logo-removebg.png" alt="logo">
+            <img class="img1"  src="./public/letter logo (1).png" alt="">
         </div>
         <div id="navbar">
             <div class="links">
@@ -32,7 +35,9 @@
                 <a href="">about us</a>
             </div>
             <div class="icons">
-                <a href=""><img src="./public/menu.png" alt=""></a>
+                <div id="menu-btn">
+                     <img src="./public/menu.png" alt="">
+                </div>   
                 <a href=""><img src="./public/cart.png" alt=""></a>
             </div>
         </div>
@@ -44,7 +49,9 @@
                 <h1 class="heading2">your space</h1>
             </div>
             <div id="video-container">
-                <div id="scroll">scroll <br> down
+                <div id="scroll"> 
+                    <h5>see</h5>
+                    <h5>more</h5>
                     <img src="./public/arrow.png" alt="">
                 </div>
                 <video class="horizontal-video" autoplay loop muted src="./public/production_id_3770017 (1080p).mp4"></video>
@@ -55,38 +62,40 @@
         <div class="category-heading">
             <h3>shop by category</h3>
         </div>
-        <div class="separator"></div>
+        <div class="separator-category"></div>
 
         <div id="page2">
             <div id="elem1" class="elem">
                 <img data-scroll data-scroll-speed="0.8" src="./public/pexels-maksim-goncharenok-4352247.jpg" alt="">
-            
-                <div data-scroll data-scroll-speed="-2" class="shop-category category1">
-                    <img class="point" src="./public/full-stop.png" alt="">
-                    <h7>shop</h7>
-                    <h3>Living room</h3>
-                    <img src="./public/next.png" alt="">
-                </div>
+                
+                    <a href="" data-scroll data-scroll-speed="-2" class="shop-category category1">
+                        <img class="point" src="./public/full-stop.png" alt="">
+                        <h7>shop</h7>
+                        <h3>Living room</h3>
+                        <img src="./public/next.png" alt="">
+                    </a>
             </div>
+
             <div id="elem2" class="elem">
                 <img data-scroll data-scroll-speed="0.8" src="./public/pexels-karolina-grabowska-4207791.jpg" alt="">
             
-                <div data-scroll data-scroll-speed="-2" class="shop-category category2">
-                    <img class="point" src="./public/full-stop.png" alt="">
-                    <h7>shop</h7>
-                    <h3>Decoration</h3>
-                    <img src="./public/next.png" alt="">
-                </div>
+                    <a href="" data-scroll data-scroll-speed="-2" class="shop-category category2">
+                        <img class="point" src="./public/full-stop.png" alt="">
+                        <h7>shop</h7>
+                        <h3>Decoration</h3>
+                        <img src="./public/next.png" alt="">
+                    </a>
             </div>
+
             <div id="elem3" class="elem">
                 <img data-scroll data-scroll-speed="0.8" src="./public/pexels-adrienne-andersen-2374959.jpg" alt="">
             
-                <div data-scroll data-scroll-speed="-2" class="shop-category category3">
-                    <img class="point" src="./public/full-stop.png" alt="">
-                    <h7>shop</h7>
-                    <h3>bedroom</h3>
-                    <img src="./public/next.png" alt="">
-                </div>
+                    <a href="" data-scroll data-scroll-speed="-2" class="shop-category category3">
+                        <img class="point" src="./public/full-stop.png" alt="">
+                        <h7>shop</h7>
+                        <h3>bedroom</h3>
+                        <img src="./public/next.png" alt="">
+                    </a>
             </div>
         </div>
 
@@ -103,66 +112,84 @@
         </div>
 
         <div data-scroll data-scroll-speed="0.8" id="page4">
-            <div  class="product" id="product1">
-                <div class="product-card">
-                    <img  src="./public/sofa.jpg" alt="">
+            
+            <a href="">
+                <div class="product" id="product1">
+                    <div class="product-card">
+                        <img  src="./public/sofa.jpg" alt="">
+                    </div>
+                    <h7>Grey leatherate Couch</h7>
+                    <h7>$349</h7>
                 </div>
-                <h7>Grey leatherate sofa</h7>
-                <h7>$349</h7>
-            </div>
-            <div class="product" id="product2">
-                <div class="product-card">
-                    <img src="./public/bed.jpg" alt="">
+            </a>
+
+            <a href="">
+                <div class="product" id="product2">
+                    <div class="product-card">
+                        <img src="./public/bed.jpg" alt="">
+                    </div>
+                    <h7>double spring mattress bed</h7>
+                    <h7>$1299</h7>
                 </div>
-                <h7>double spring mattress bed</h7>
-                <h7>$1299</h7>
-            </div>
-            <div class="product" id="product3">
-                <div class="product-card">
-                    <img src="./public/cushion.jpg" alt="">
+            </a>
+            
+            <a href="">
+                <div class="product" id="product3">
+                    <div class="product-card">
+                        <img src="./public/cushion.jpg" alt="">
+                    </div>
+                    <h7>Coral green cushions</h7>
+                    <h7>$99</h7>
                 </div>
-                <h7>Coral green cushions</h7>
-                <h7>$99</h7>
-            </div>
-            <div class="product" id="product4">
-                <div class="product-card">
-                    <img src="./public/dining.jpg" alt="">
+            </a>
+
+            <a href="">
+                <div class="product" id="product4">
+                    <div class="product-card">
+                        <img src="./public/dining.jpg" alt="">
+                    </div>
+                    <h7>4 seater dining set</h7>
+                    <h7>$899</h7>
                 </div>
-                <h7>4 seater dining set</h7>
-                <h7>$899</h7>
-            </div>
+            </a>
         </div>
 
-        <div class="category-heading">
+        <div class="support-heading">
             <h3>Love and support</h3>
         </div>
-        <div class="separator"></div>
+        <div class="separator-support"></div>
 
         <div id="page5">
             <div class="heading-container">
 
-                <h3>Thank you for choosing Urban Decor</h3> 
-                <h3 class="sub-heading">where your support not only enhances your home but also changes lives.</h3>
-                <!-- <h3> Together, we're shaping a brighter future, one stylish space at a time.</h3> -->
-                <a class="button" href="">Follow our social media</a>
+                <h3>Thank you so much for choosing Urban Decor</h3> 
+                <h3 class="sub-heading">it means a lot to serve you.</h3>
+                <a class="button" href="">See Stories</a>
             </div>            
         </div>
+
         <div id="page6">
             <div class="footer1">
-
                 <div class="social">
+                    <h7>Connect with us</h7>
                     <a href="">Instagram</a>
                     <a href="">Facebook</a>
                     <a href="">Twitter</a>
                     <a href="">Youtube</a>
                 </div>
                 <div class="logo">
-                    <img src="./public/logo-removebg-preview.png" alt="">
+                    <img src="./public/logo-removebg.png" alt="">
+                    <div class="tnc">
+                        <h7>© THE URBAN DECOR CO. 2024</h7>
+                        <h7>TERMS OF USE</h7>
+                        <h7>PRIVACY POLICY</h7>                        
+                    </div>
                 </div>
                 <div class="others">
-                    <a href="">Faq's</a>
+                    <h7>others</h7>
                     <a href="">wholesale</a>
                     <a href="">careers</a>
+                    <a href="">FAQ's</a>
                     <a href=""></a>
                 </div>
             </div>
@@ -177,6 +204,7 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 </html>
