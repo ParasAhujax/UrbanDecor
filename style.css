@@ -13,11 +13,6 @@ html,body{
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
-html {
-    height: auto;
-    overflow: auto;
-  }
-
 #go-to-home {
     position: fixed;
     height: 3vw;
@@ -46,7 +41,6 @@ html {
     position: fixed;
     transform: translate(-50%,-50%) scale(0);
     opacity: 0.5;
-    /* z-index: 100; */
 }
 #nav{
     width: 100%;
@@ -57,27 +51,22 @@ html {
     justify-content: space-between;
     align-items: start;
     padding-left: 1vw;
-    /* background-color: red; */
 }
 #nav .logo{
     height:8vw;
     overflow: hidden;
+    margin-top: 5px;
 }
 #nav .logo .img1,#nav .logo .img2{
     width:8vw;
     height:8vw;
-    margin-top: 5px;
-    /* background-color: red; */
 }
-
-
 #navbar{
     height: 4vw;
     min-width:50vw ;
     padding: 3vw 2vw;
     display: flex;
     align-items: center;
-    
     gap:4vw;
 }
 #navbar a{
@@ -95,7 +84,6 @@ html {
     align-items: center;
     gap:5vw;
 }
-
 #navbar .icons img{
     width: 1.5vw;
     height: 1.5vw;
@@ -121,8 +109,6 @@ html {
     min-height:100vh;
     width: 100%;
     position: relative;
-    /* padding: 0 1.5vw; */
-    /* padding-top: 8vh; */
 }
 #page1 h1{
     bottom:0;
@@ -149,11 +135,6 @@ html {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-@media (min-width:701px){
-    #video-container .vertical-video{
-    display: none;
-    }
 }
 #video-container #scroll{
     padding:2.5vw 3.5vw;
@@ -254,9 +235,6 @@ html {
     text-decoration: none;
     color:#050505;
 }
-#page2 .elem .shop-category:hover{
-    /* height: 200px; */
-}
 #page3{
     min-height:40vh;
     width: 100%;
@@ -304,7 +282,6 @@ html {
     padding-top: 3vh;
     min-height: 100vh;
     width: 100%; 
-    /* background-color: red; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -374,7 +351,6 @@ html {
     width: 60%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 #page5 .heading-container h3{
@@ -403,10 +379,13 @@ html {
     text-decoration: none;
 }
 #page6{
+    min-height: 50vh;
     padding:1.5vw;
     padding-bottom: 3vw;
+    margin-top: 10vw;
 }
 #page6 .footer1{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -427,8 +406,14 @@ html {
     line-height: 1.5vw;
 }
 #page6 .footer1 .logo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    margin-top: 8vw;
     display: flex;
     flex-direction: column;
+    height: 30vw;
+    width: 35vw;
     align-items: center;
 }
 .tnc h7{
@@ -458,7 +443,7 @@ html {
     font-size: 1.1vw;
     text-align: center;
     margin:auto;
-    margin-top: 3vw;
+    margin-top: 8vw;
     width: 60%;
     height: 10vw;
 }
@@ -466,7 +451,14 @@ html {
     font-family: helvetica;
     line-height: 1.4vw;
 }
-
+@media (min-width:701px){
+    #video-container .vertical-video{
+    display: none;
+    }
+    #page6 .tnc{
+        display: none;
+    }
+}
 @media (max-width:700px) {
     #nav{
         width: 100%;
@@ -476,66 +468,64 @@ html {
         justify-content: space-between;
         align-items: center;
         padding-left: 1vw;
-        /* background-color: red; */
     }
     #nav .logo{
-        /* background-color: green; */
-        width:25vw;
-        height:22vw;
-        margin:3vw 2vw;
+        width:22vw;
+        height:18vw;
+        margin-top:2vw ;
+        margin-left: 2vw;
         overflow: hidden;
+        padding: 0;
+        align-items: center;
     }
     #nav .logo .img2,#nav .logo .img1{
-        /* background-color: green; */
-        width:20vw;
-        height:20vw;
+        width:17vw;
+        height:17vw;
+        margin:0vw;
     }
-    #nav .logo .img1{
-
-    }
-    #menu-btn{
-        /* height: 12vw;
-        width: 12vw; */
-        background-color: red;
+    #navbar{
+        min-width: 20vw;
     }
     #menu-btn img{
         height: 12vw;
         width: 12vw;
-        background-color: green;
-        /* display: none; */
     }
     #navbar .icons {
-        background-color: transparent;
-        padding:5px 12px;
-        border-radius: 20px;
-        display: flex;
-        gap:2vw;
+        height: 9vw;
+        width: 22vw;
+        justify-content: space-between;
     }
-    #navbar a{
+    #navbar .icons img{
+        height: 5.5vw;
+        width: 5.5vw;
+    }
+    #navbar .links{
         display: none;
     }
-   
+    #go-to-home {
+        height: 15vw;
+        width: 15vw;
+        bottom:-3vw;
+        right:2vw;
+    }
+    #go-to-home img{
+        height:6vw;
+        width: 6vw;
+    }
     #page1 h1{
         font-size: 16vw;
         letter-spacing: -0.5vw;  
-        /* letter-spacing: -3px;   */
         line-height: 16vw;  
         margin:0px 20px;
     }
     #page1 .heading-container{
         margin-bottom:30px;
     }
-    #page1{
-        /* padding:0 3vw; */
-        /* padding-bottom: 0px; */
-    }
     #video-container{
         height:100vh;
-        /* margin-top:3vw; */
     }
     #video-container #scroll {
         display: none;
-        /* scale:0; */
     }
     #video-container .horizontal-video{
         display:none;
@@ -590,15 +580,10 @@ html {
         font-size: 4vw;
         margin:5vw 0;
         width: 90%;
-        /* display: block; */
         line-height: 8vw;
         align-items: center;
     }
-    #page3 .sub-heading p{
-        /* margin-bottom: 4vw; */
-    }
     #page3 .sub-heading .shop-now{
-        /* background-color: red; */
         font-size: 3vw;
         width: 25vw;
         height: 8vw;
@@ -606,13 +591,12 @@ html {
         justify-content: center;
     }
     #page3 .sub-heading .shop-now img{
-        /* background-color: green; */
         width: 2vw;
         height: 2vw;
     }
     #page4{
         flex-direction: column;
-        margin-bottom: 3vw;
+        margin-bottom: 0vw;
     }
     #page4 .product{
         margin-bottom:8vw;
@@ -622,11 +606,102 @@ html {
         width:85vw;
         height:100vw;
     }
-    .product h7{
+    #page4 .product h7{
         font-size: 3.5vw;
     }
-
+    .support-heading{
+        margin-left: 5vw;
+        margin-top:0;
+    }
+    .support-heading h3{
+        font-size: 2.9vw;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+    }
+    .separator-support{
+        width: 88%;
+        margin: auto;
+    }
+    #page5 .heading-container{
+        width: 85%;
+    }
+    #page5 .heading-container h3{
+        font-size: 7vw;
+        line-height: 6vw;
+    }
+    #page5 .heading-container .button{
+        margin-top: 5vw;
+        height: 12vw;
+        width: 70vw;
+        font-size: 3.5vw;
+    }
+    #page6{
+        margin-top: 10vw;
+    }
+    #page6 .footer1 .logo{
+        position: absolute;
+        top: -8vw;
+        left: 55%;
+        scale:1.3;
+    }
+    #page6 .footer1 .social,#page6 .footer1 .others{
+        margin-top: 25vw;
+        width: 45vw;
+        height: 45vw;
+        padding: 5vw;
+    }
+    #page6 .footer1 .others {
+        text-align: left;
+    }
+    #page6 .footer1 a{
+        font-size: 5vw;
+        line-height: 6vw;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    #page6 .footer1 .social h7, #page6 .footer1 .others h7{
+        font-size: 3vw;
+        margin-bottom: 8vw;
+    }
+    #page6 .footer1 .logo .tnc{
+        display: none;
+        scale: 0;
+    }
     
+
+    #page6 .footer2{
+        height: 80vw;
+        padding: 5vw 0;
+        width: 90%;
+        margin-top: 3vw;
+        margin-bottom:10vw ;
+    }
+    #page6 .footer2 p{
+        text-align: left;
+        font-size: 4vw;
+        line-height: 5vw;
+
+    }
+    #page6 .tnc{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:5vw auto;
+        margin-bottom: 2vw;
+        width: 95%;
+        height: 10vw;
+        bottom:2vw;
+        padding: 2vw;
+    }
+    #page6 .tnc h7{
+        font-family: helvetica;
+        font-size: 3vw;
+        color: grey;
+    }
+    #page6 .tnc .company{
+        width: 28%;
+    }
+
 }
 
 

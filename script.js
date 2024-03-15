@@ -4,6 +4,7 @@
     const locoScroll = new LocomotiveScroll({
         el: document.querySelector("#main"),
         smooth: true,
+        smoothMobile:true   //smooth mobile scrolling
     });
     // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
     locoScroll.on("scroll", ScrollTrigger.update);
@@ -42,7 +43,7 @@ function navbarAnimation(){
             trigger: "#page1",
             scroller: "#main",
             start: "top 0",
-            end: "top -5%",
+            end: "top -20%",
             scrub: true,
         },
     });
@@ -53,7 +54,7 @@ function navbarAnimation(){
           trigger: "#page1",
           scroller: "#main",
           start: "top 0",
-          end: "top -5%",
+          end: "top -20%",
           scrub: true,
         },
       });
@@ -66,7 +67,7 @@ function navbarAnimation(){
             trigger: "#page1",
             scroller: "#main",
             start: "top 0",
-            end: "top -5%",
+            end: "top -20%",
             scrub: true,
         },
     });
